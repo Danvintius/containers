@@ -16,7 +16,8 @@ class Team {
         this.members.add(...characters)
 }
 
-     toArray() {
-
+     toArray(characters) {
+	let arr = Array.from(characters);
+	return arr;
 }
 }
