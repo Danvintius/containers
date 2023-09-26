@@ -1,6 +1,6 @@
 import ErrorRepository from "../ErrorRepository";
 import Team from "../Team";
-import { mag, man } from '../Character';
+import Character, { mag, man } from '../Character';
 
 test('test1', () => {
     const repo = new ErrorRepository();
@@ -28,7 +28,7 @@ test('test3', () => {
     team.members.add(mag)
     team.members.add(man)
 
-    const result = team.toArray(members);
+    const result = team.toArray(team.members);
     expect(result).toEquals([
         Character {
           name: 'Маг',
