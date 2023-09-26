@@ -1,4 +1,4 @@
-class ErrorRepository {
+export default class ErrorRepository {
     constructor() {
         this.errors = new Map();
     }

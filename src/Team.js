@@ -1,4 +1,4 @@
-class Team {
+export default class Team {
     constructor() {
         this.members = new Set();
     }
@@ -17,7 +17,7 @@ class Team {
 }
 
      toArray(characters) {
-	let arr = Array.from(characters);
-	return arr;
+	    let arr = Array.from(characters);
+	    return arr;
 }
 }
